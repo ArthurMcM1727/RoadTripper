@@ -112,10 +112,11 @@ npm install
 
 ```bash
 # Run unit tests
-nmp run test 
+npm run test 
 
 # Launch Cypress for E2E
-npx cpyress open
+npx cypress open
+```
 
 
 
