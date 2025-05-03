@@ -53,13 +53,45 @@ A customizable, intelligent road trip planner where users enter a start and end 
 
 | Feature                      | API/Service                          | Status     |
 |-----------------------------|--------------------------------------|------------|
-| Routing & Directions        | OpenRouteService / Google Maps API  | ✅ In Use  |
+| Routing & Directions        | OpenRouteService / Google Maps API   | 🔜 Planned |
 | Vehicle Fuel Economy        | FuelEconomy.gov API                  | 🔜 Planned |
 | Fuel Prices                 | GasBuddy API / AAA Fuel Finder       | 🔜 Planned |
 | Attractions & Reviews       | Yelp Fusion API                      | 🔜 Planned |
 | Things to Do                | Google Things To Do API              | 🔜 Planned |
 | Weather                     | OpenWeatherMap / WeatherAPI          | 🔜 Planned |
 | Traffic                     | Google Maps Traffic API              | 🔜 Planned |
+
+---
+
+## 📁 Project Structure
+
+```
+road-trip-planner/
+├── client/                     # React frontend
+│   ├── public/                 # Static assets
+│   └── src/
+│       ├── components/         # Reusable UI components
+│       ├── pages/              # Page-level views (Home, Planner, etc.)
+│       ├── hooks/              # Custom React hooks
+│       ├── services/           # Handles API requests
+│       ├── styles/             # Global styles and themes
+│       └── App.jsx             # App entry point
+
+├── server/                     # Node.js backend
+│   ├── controllers/            # Request handlers for each route
+│   ├── routes/                 # Express route definitions
+│   ├── services/               # Integration logic for third-party APIs
+│   ├── utils/                  # Helper functions (e.g., formatting, validation)
+│   └── index.js                # Express server entry point
+
+├── shared/                     # Shared logic/types between client and server
+├── scripts/                    # Dev scripts or mock data utilities
+├── .env                        # Environment variables
+├── .gitignore
+├── package.json
+├── vite.config.js              # Frontend config (Vite)
+└── README.md
+```
 
 ---
 
@@ -72,3 +104,18 @@ cd road-trip-planner
 
 # Install dependencies
 npm install
+
+```
+---
+
+## Testing
+
+```bash
+# Run unit tests
+nmp run test 
+
+# Launch Cypress for E2E
+npx cpyress open
+
+
+
