@@ -3,9 +3,25 @@
   "version": "1.0.0",
   "description": "A web application to search vehicle information using VIN",
   "main": "script.js",
-  "dependencies": {},
-  "devDependencies": {},
   "scripts": {
     "start": "python -m http.server 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArthurMcM1727/RoadTripper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArthurMcM1727/RoadTripper/issues"
+  },
+  "homepage": "https://github.com/ArthurMcM1727/RoadTripper#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2",
+    "xml2js": "^0.6.2"
   }
 }
